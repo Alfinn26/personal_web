@@ -1,3 +1,22 @@
+// CURSOR GLOW
+const cursor = document.querySelector(".cursor");
+document.addEventListener("mousemove", e => {
+  cursor.style.left = e.clientX + "px";
+  cursor.style.top = e.clientY + "px";
+});
+
+// DARK LIGHT TOGGLE
+const toggle = document.getElementById("theme-toggle");
+toggle.addEventListener("click", () => {
+  document.body.classList.toggle("light-mode");
+  toggle.textContent = 
+    document.body.classList.contains("light-mode") ? "☀️" : "🌙";
+});
+
+// HAMBURGER MENU
+function toggleMenu(){
+  document.getElementById("nav-menu").classList.toggle("active");
+}
 // INIT AOS
 AOS.init({
 duration:1200,
