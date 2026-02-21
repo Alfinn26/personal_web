@@ -16,13 +16,29 @@
 </head>
 <body>
 
+    <!-- LOADING SCREEN -->
+<div id="loader">
+  <h1>Assalamualaikum broo</h1>
+</div>
+
+<!-- CURSOR GLOW -->
+<div class="cursor"></div>
+
 <!-- PARTICLES -->
 <div id="particles-js"></div>
 
 <!-- NAVBAR -->
 <nav class="navbar">
     <div class="logo">ALFIN</div>
-    <ul>
+
+    <div class="nav-right">
+        <button id="theme-toggle">🌙</button>
+        <div class="hamburger" onclick="toggleMenu()">
+            ☰
+        </div>
+    </div>
+
+    <ul id="nav-menu">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">Tentang</a></li>
         <li><a href="#gallery">Foto</a></li>
@@ -53,9 +69,9 @@
 <section id="gallery">
     <h2 data-aos="fade-up">Foto Saya</h2>
     <div class="gallery">
-        <img src="gambar1.jpg" data-aos="zoom-in">
         <img src="gambar2.jpg" data-aos="zoom-in">
         <img src="gambar3.jpg" data-aos="zoom-in">
+        <img src="gambar1.jpg" data-aos="zoom-in">
     </div>
 </section>
 
