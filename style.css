@@ -50,6 +50,68 @@ object-fit:cover;
 border-radius:20px;
 }
 
+/* GRADIENT ANIMATED BORDER */
+.profile-card{
+position:relative;
+width:220px;
+height:220px;
+margin:40px auto;
+border-radius:25px;
+padding:4px;
+background:linear-gradient(
+45deg,
+#ff00cc,
+#3333ff,
+#00f7ff,
+#ffcc00,
+#ff00cc
+);
+background-size:400% 400%;
+animation:gradientMove 6s ease infinite;
+}
+
+@keyframes gradientMove{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+.card-inner{
+width:100%;
+height:100%;
+background:#0f0f1a;
+border-radius:20px;
+overflow:hidden;
+position:relative;
+transition:transform 0.2s ease;
+transform-style:preserve-3d;
+}
+
+/* WARNA BERCAHAYA */
+.profile-card::before{
+content:"";
+position:absolute;
+top:-50%;
+left:-50%;
+width:200%;
+height:200%;
+background:radial-gradient(circle,#00f7ff,transparent 70%);
+animation:glowMove 4s linear infinite;
+opacity:0.3;
+z-index:0;
+}
+
+@keyframes glowMove{
+0%{transform:rotate(0deg);}
+100%{transform:rotate(360deg);}
+}
+
+.profile-card:hover{
+box-shadow:0 0 40px #00f7ff,
+0 0 60px #ff00cc,
+0 0 80px #3333ff;
+transition:0.4s;
+  }
 /* Glow effect */
 .profile-card:hover .card-inner{
 box-shadow:0 0 30px #00f7ff;
