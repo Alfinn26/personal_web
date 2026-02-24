@@ -25,6 +25,36 @@ from{transform:scale(0.5);}
 to{transform:scale(1);}
 }
 
+/* 3D PROFILE CARD */
+.profile-card{
+width:220px;
+height:220px;
+margin:20px auto;
+perspective:1000px;
+}
+
+.card-inner{
+width:100%;
+height:100%;
+border-radius:20px;
+overflow:hidden;
+transition:transform 0.2s ease;
+transform-style:preserve-3d;
+box-shadow:0 20px 40px rgba(0,0,0,0.5);
+}
+
+.card-inner img{
+width:100%;
+height:100%;
+object-fit:cover;
+border-radius:20px;
+}
+
+/* Glow effect */
+.profile-card:hover .card-inner{
+box-shadow:0 0 30px #00f7ff;
+}
+
 /* CURSOR */
 .cursor{
 position:fixed;
