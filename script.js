@@ -23,6 +23,54 @@ duration:1200,
 once:true
 });
 
+const card = document.getElementById("card");
+
+let isDragging = false;
+
+function rotateCard(x, y) {
+    const rect = card.getBoundingClientRect();
+    const centerX = rect.left + rect.width / 2;
+    const centerY = rect.top + rect.height / 2;
+
+    const rotateX = -(y - centerY) / 15;
+    const rotateY = (x - centerX) / 15;
+
+    card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+}
+
+// DESKTOP
+card.addEventListener("mousedown", () => {
+    isDragging = true;
+});
+
+document.addEventListener("mouseup", () => {
+    isDragging = false;
+    card.style.transform = "rotateX(0) rotateY(0)";
+});
+
+document.addEventListener("mousemove", (e) => {
+    if (isDragging) {
+        rotateCard(e.clientX, e.clientY);
+    }
+});
+
+// MOBILE TOUCH
+card.addEventListener("touchstart", () => {
+    isDragging = true;
+});
+
+document.addEventListener("touchend", () => {
+    isDragging = false;
+    card.style.transform = "rotateX(0) rotateY(0)";
+});
+
+document.addEventListener("touchmove", (e) => {
+    if (isDragging) {
+        const touch = e.touches[0];
+        rotateCard(touch.clientX, touch.clientY);
+    }
+});
+
 const card = document.querySelector(".card-inner");
 
 document.querySelector(".profile-card").addEventListener("mousemove", (e) => {
