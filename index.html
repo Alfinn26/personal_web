@@ -3,94 +3,85 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Personal Web - Alfin Sabil Khafifudin</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+<title>Alfin Sabil | Personal Website</title>
 <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<!-- LOADER -->
-<div id="loader">
-    <div class="spinner"></div>
-</div>
-
-<!-- NAVBAR -->
-<nav class="navbar">
-    <div class="logo">Alfin</div>
-    <ul>
-        <li onclick="showPage('home')">Tentang</li>
-        <li onclick="showPage('project')">Project</li>
-        <li onclick="showPage('gallery')">Gallery</li>
-        <li onclick="showPage('contact')">Contact</li>
-    </ul>
+<nav>
+<a href="#about">About</a>
+<a href="#alamat">Alamat</a>
+<a href="#organisasi">Organisasi</a>
+<a href="#gallery">Gallery</a>
+<a href="#project">Project</a>
+<a href="#contact">Contact</a>
 </nav>
 
-<!-- HOME -->
-<section id="home" class="page active">
 <div class="hero">
-
-<div class="left">
-<h1><span id="typing"></span></h1>
-<p>
-Saya adalah pribadi yang aktif berorganisasi dan dipercaya sebagai Ketua PR IPM 
-SMA Muhammadiyah 8 Sukodadi. Saya menyukai dunia web development dan desain modern.
-</p>
+<div class="profile-card" id="profile">
+<img src="pp.jpg" alt="Foto Alfin">
+</div>
+<h1>Alfin Sabil</h1>
+<p>Future OSN Informatika Champion 🚀</p>
 </div>
 
-<div class="right">
-<div class="card-wrapper">
-<div class="card" id="card">
-<img src="pp.jpg" alt="Foto Profil">
-</div>
-</div>
-</div>
-
-</div>
+<section id="about">
+<h2>Tentang Saya</h2>
+<p>Saya pelajar yang fokus di bidang informatika dan pengembangan software modern.</p>
 </section>
 
-<!-- PROJECT -->
-<section id="project" class="page">
-<h2 class="title">Project Saya</h2>
-<div class="grid">
-<div class="project-card">
-<img src="project1.jpg">
-<p>Website Portfolio Modern & Interaktif.</p>
-</div>
-<div class="project-card">
-<img src="project2.jpg">
-<p>Landing Page Responsive Design.</p>
-</div>
-<div class="project-card">
-<img src="project3.jpg">
-<p>Aplikasi sederhana berbasis JavaScript.</p>
-</div>
-</div>
+<section id="alamat">
+<h2>Alamat</h2>
+<p>Dsn Ngelo Ds Menongo RT2/RW5 Kec Sukodadi Kab Lamongan Prov Jawa Timur</p>
 </section>
 
-<!-- GALLERY -->
-<section id="gallery" class="page">
-<h2 class="title">Gallery</h2>
-<div class="grid">
-<img src="gambar1.JPG.jpg">
+<section id="organisasi">
+<h2>Riwayat Organisasi</h2>
+<ul>
+<li>Ketum PR IPM Smam 8 Sukodadi Periode 2025/2026</li>
+<li>Anggbid Perkaderan PC IPM Sukodadi</li>
+<li>Ketum PR IPM MtsM 20 Menongo Periode 2022/2023</li>
+</ul>
+</section>
+
+<section id="gallery">
+<h2>Gallery</h2>
+<div class="gallery">
+<img src="gambar1.JPG">
 <img src="gambar2.jpg">
 <img src="gambar3.JPG">
 </div>
 </section>
 
-<!-- CONTACT -->
-<section id="contact" class="page">
-<h2 class="title">Contact</h2>
+<section id="project">
+<h2>Project Saya</h2>
+
+<div class="project-card">
+<h3>Game Survival JS</h3>
+<p>Game zombie dengan sistem score dan boss fight.</p>
+</div>
+
+<div class="project-card">
+<h3>Website Portfolio</h3>
+<p>Website modern dengan efek 3D dan glow.</p>
+</div>
+
+</section>
+
+<section id="contact">
+<h2>Kontak Saya</h2>
 <div class="contact">
-<a href="https://wa.me/6285137122268" target="_blank"><i class="fab fa-whatsapp"></i></a>
-<a href="https://instagram.com/alvinn.sa" target="_blank"><i class="fab fa-instagram"></i></a>
-<a href="https://tiktok.com/@ambatungkerr" target="_blank"><i class="fab fa-tiktok"></i></a>
+<a href="https://wa.me/6285137122268" target="_blank">WhatsApp</a>
+<a href="https://instagram.com/alfinn.sa" target="_blank">Instagram</a>
+<a href="https://tiktok.com/@ambatungkerr" target="_blank">TikTok</a>
+<a href="mailto:alfinsabil647@gmail.com">Email</a>
 </div>
 </section>
 
+<footer>
+© 2026 Alfin Sabil | All Rights Reserved
+</footer>
+
 <script src="script.js"></script>
 </body>
-</html>
+    </html>
