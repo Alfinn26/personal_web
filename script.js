@@ -1,29 +1,37 @@
 // typing effect
 
-const words=["Web Developer","Single Era","Tech Enthusiast"]
-let i=0
-let j=0
+const text=["Web Developer","Programmer","Tech Enthusiast"]
+let count=0
+let index=0
 let current=""
-let isDeleting=false
+let letter=""
 
 function type(){
 
-current=words[i]
+if(count===text.length){
+count=0
+}
 
-if(!isDeleting){
-document.getElementById("typing").textContent=current.slice(0,++j)
-if(j==current.length)isDeleting=true
+current=text[count]
+letter=current.slice(0,++index)
+
+document.querySelector(".typing").textContent=letter
+
+if(letter.length===current.length){
+
+count++
+index=0
+
+setTimeout(type,1500)
+
 }
 
 else{
-document.getElementById("typing").textContent=current.slice(0,--j)
-if(j==0){
-isDeleting=false
-i=(i+1)%words.length
-}
+
+setTimeout(type,100)
+
 }
 
-setTimeout(type,120)
 }
 
 type()
@@ -32,56 +40,15 @@ type()
 
 // scroll top
 
-document.getElementById("scrollTop").onclick=()=>{
+const btn=document.getElementById("scrollTop")
+
+btn.onclick=()=>{
+
 window.scrollTo({
+
 top:0,
 behavior:"smooth"
-})
-}
-
-
-
-// reveal animation
-
-window.addEventListener("scroll",()=>{
-
-document.querySelectorAll(".reveal").forEach(el=>{
-
-const top=el.getBoundingClientRect().top
-
-if(top<window.innerHeight-100){
-
-el.style.opacity=1
-el.style.transform="translateY(0)"
-
-}
 
 })
 
-})
-
-
-
-// counter animation
-
-const counters=document.querySelectorAll(".counter")
-
-counters.forEach(counter=>{
-
-const update=()=>{
-
-const target=+counter.dataset.target
-const c=+counter.innerText
-
-const inc=target/100
-
-if(c<target){
-counter.innerText=Math.ceil(c+inc)
-setTimeout(update,20)
 }
-
-}
-
-update()
-
-})
