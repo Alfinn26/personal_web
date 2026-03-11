@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Alfin Sabil | Portfolio</title>
+<title>Alfin Sabil | Developer</title>
 
 <link rel="stylesheet" href="style.css">
 
@@ -15,7 +16,11 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
 
 <body>
 
-<nav>
+<div id="particles"></div>
+<div class="cursor-glow"></div>
+
+<nav class="navbar">
+
 <div class="logo">Alfin.</div>
 
 <ul>
@@ -24,46 +29,51 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
 <li><a href="#project">Proyek</a></li>
 <li><a href="#contact">Kontak</a></li>
 </ul>
+
 </nav>
 
 
-<section class="hero" id="home">
+<section id="home" class="hero">
 
-<div class="hero-text">
+<div class="hero-left">
 
-<h3>HALO, SAYA</h3>
+<p class="intro">HALO, SAYA</p>
+
 <h1>Alfin Sabil</h1>
 
-<h2>Web Developer & Single Era</h2>
+<h2><span id="typing"></span></h2>
 
-<p>
-Saya pelajar yang tertarik di bidang informatika,
-pengembangan web, dan teknologi masa depan.
+<p class="desc">
+Saya membuat website modern, game sederhana
+dan project teknologi.
 </p>
 
-<div class="hero-btn">
+<div class="buttons">
 
 <a href="#project" class="btn">Lihat Proyek</a>
-
 <a href="#contact" class="btn-outline">Kontak Saya</a>
 
 </div>
 
 <div class="social">
 
-<a href="#"><i class="fab fa-github"></i></a>
-<a href="#"><i class="fab fa-linkedin"></i></a>
-<a href="#"><i class="fab fa-instagram"></i></a>
-<a href="#"><i class="fab fa-tiktok"></i></a>
+<i class="fab fa-github"></i>
+<i class="fab fa-instagram"></i>
+<i class="fab fa-linkedin"></i>
+<i class="fab fa-tiktok"></i>
 
 </div>
 
 </div>
 
 
-<div class="hero-img">
+<div class="hero-right">
 
-<img src="gambar3.JPG">
+<div class="profile-card">
+
+<img src="pp.jpg">
+
+</div>
 
 </div>
 
@@ -71,7 +81,7 @@ pengembangan web, dan teknologi masa depan.
 
 
 
-<section class="about" id="about">
+<section id="about" class="about reveal">
 
 <div class="about-card">
 
@@ -82,27 +92,24 @@ pengembangan web, dan teknologi masa depan.
 <h2>Tentang Saya</h2>
 
 <p>
-Saya seorang pelajar yang sedang belajar menjadi
-programmer profesional.
-
-Saya suka membuat website, game sederhana,
-dan project teknologi.
+Saya pelajar yang tertarik pada dunia
+programming dan teknologi modern.
 </p>
 
 <div class="stats">
 
 <div>
-<h3>2+</h3>
+<h3 class="counter" data-target="2">0</h3>
 <p>Tahun Belajar</p>
 </div>
 
 <div>
-<h3>3+</h3>
+<h3 class="counter" data-target="3">0</h3>
 <p>Project</p>
 </div>
 
 <div>
-<h3>16+</h3>
+<h3 class="counter" data-target="16">0</h3>
 <p>Age</p>
 </div>
 
@@ -116,28 +123,31 @@ dan project teknologi.
 
 
 
-<section class="project" id="project">
+<section id="project" class="project reveal">
 
-<h2>Proyek Saya</h2>
+<h2>Proyek Terpilih</h2>
 
 <div class="project-grid">
 
 <div class="card">
-<img src="p1.jpg">
+<img src="images/project1.jpg">
+<div class="overlay">
 <h3>Website Portfolio</h3>
-<p>Website modern dengan animasi.</p>
+</div>
 </div>
 
 <div class="card">
-<img src="p2.jpg">
-<h3>Game Zombie</h3>
-<p>Game JavaScript survival.</p>
+<img src="images/project2.jpg">
+<div class="overlay">
+<h3>Game JavaScript</h3>
+</div>
 </div>
 
 <div class="card">
-<img src="p3.jpg">
+<img src="images/project3.jpg">
+<div class="overlay">
 <h3>Dashboard Data</h3>
-<p>Visualisasi data interaktif.</p>
+</div>
 </div>
 
 </div>
@@ -146,9 +156,21 @@ dan project teknologi.
 
 
 
-<section class="contact" id="contact">
+<section id="contact" class="contact reveal">
 
 <h2>Mari Terhubung</h2>
+
+<div class="contact-box">
+
+<div class="contact-left">
+
+<p>📧 Email</p>
+<p>alfinsabil647@gmail.com</p>
+
+<p>💬 WhatsApp</p>
+<p>+6285137122268</p>
+
+</div>
 
 <form>
 
@@ -158,9 +180,11 @@ dan project teknologi.
 
 <textarea placeholder="Pesan"></textarea>
 
-<button>Kirim Pesan</button>
+<button>Kirim</button>
 
 </form>
+
+</div>
 
 </section>
 
@@ -171,6 +195,7 @@ dan project teknologi.
 
 </footer>
 
+<button id="scrollTop">↑</button>
 
 <script src="script.js"></script>
 
