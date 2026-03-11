@@ -3,85 +3,176 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Alfin Sabil | Personal Website</title>
+
+<title>Alfin Sabil | Portfolio</title>
+
 <link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
+
 <body>
 
 <nav>
-<a href="#about">About</a>
-<a href="#alamat">Alamat</a>
-<a href="#organisasi">Organisasi</a>
-<a href="#gallery">Gallery</a>
-<a href="#project">Project</a>
-<a href="#contact">Contact</a>
+<div class="logo">Alfin.</div>
+
+<ul>
+<li><a href="#home">Beranda</a></li>
+<li><a href="#about">Tentang</a></li>
+<li><a href="#project">Proyek</a></li>
+<li><a href="#contact">Kontak</a></li>
+</ul>
 </nav>
 
-<div class="hero">
-<div class="profile-card" id="profile">
-<img src="pp.jpg" alt="Foto Alfin">
-</div>
+
+<section class="hero" id="home">
+
+<div class="hero-text">
+
+<h3>HALO, SAYA</h3>
 <h1>Alfin Sabil</h1>
-<p>Future OSN Informatika Champion 🚀</p>
+
+<h2>Web Developer & Single Era</h2>
+
+<p>
+Saya pelajar yang tertarik di bidang informatika,
+pengembangan web, dan teknologi masa depan.
+</p>
+
+<div class="hero-btn">
+
+<a href="#project" class="btn">Lihat Proyek</a>
+
+<a href="#contact" class="btn-outline">Kontak Saya</a>
+
 </div>
 
-<section id="about">
-<h2>Tentang Saya</h2>
-<p>Saya pelajar yang fokus di bidang informatika dan pengembangan software modern.</p>
-</section>
+<div class="social">
 
-<section id="alamat">
-<h2>Alamat</h2>
-<p>Dsn Ngelo Ds Menongo RT2/RW5 Kec Sukodadi Kab Lamongan Prov Jawa Timur</p>
-</section>
+<a href="#"><i class="fab fa-github"></i></a>
+<a href="#"><i class="fab fa-linkedin"></i></a>
+<a href="#"><i class="fab fa-instagram"></i></a>
+<a href="#"><i class="fab fa-tiktok"></i></a>
 
-<section id="organisasi">
-<h2>Riwayat Organisasi</h2>
-<ul>
-<li>Ketum PR IPM Smam 8 Sukodadi Periode 2025/2026</li>
-<li>Anggbid Perkaderan PC IPM Sukodadi</li>
-<li>Ketum PR IPM MtsM 20 Menongo Periode 2022/2023</li>
-</ul>
-</section>
+</div>
 
-<section id="gallery">
-<h2>Gallery</h2>
-<div class="gallery">
-<img src="gambar1.JPG">
-<img src="gambar2.jpg">
+</div>
+
+
+<div class="hero-img">
+
 <img src="gambar3.JPG">
+
 </div>
+
 </section>
 
-<section id="project">
-<h2>Project Saya</h2>
 
-<div class="project-card">
-<h3>Game Survival JS</h3>
-<p>Game zombie dengan sistem score dan boss fight.</p>
+
+<section class="about" id="about">
+
+<div class="about-card">
+
+<img src="gambar1.JPG">
+
+<div>
+
+<h2>Tentang Saya</h2>
+
+<p>
+Saya seorang pelajar yang sedang belajar menjadi
+programmer profesional.
+
+Saya suka membuat website, game sederhana,
+dan project teknologi.
+</p>
+
+<div class="stats">
+
+<div>
+<h3>2+</h3>
+<p>Tahun Belajar</p>
 </div>
 
-<div class="project-card">
+<div>
+<h3>3+</h3>
+<p>Project</p>
+</div>
+
+<div>
+<h3>16+</h3>
+<p>Age</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<section class="project" id="project">
+
+<h2>Proyek Saya</h2>
+
+<div class="project-grid">
+
+<div class="card">
+<img src="p1.jpg">
 <h3>Website Portfolio</h3>
-<p>Website modern dengan efek 3D dan glow.</p>
+<p>Website modern dengan animasi.</p>
+</div>
+
+<div class="card">
+<img src="p2.jpg">
+<h3>Game Zombie</h3>
+<p>Game JavaScript survival.</p>
+</div>
+
+<div class="card">
+<img src="p3.jpg">
+<h3>Dashboard Data</h3>
+<p>Visualisasi data interaktif.</p>
+</div>
+
 </div>
 
 </section>
 
-<section id="contact">
-<h2>Kontak Saya</h2>
-<div class="contact">
-<a href="https://wa.me/6285137122268" target="_blank">WhatsApp</a>
-<a href="https://instagram.com/alfinn.sa" target="_blank">Instagram</a>
-<a href="https://tiktok.com/@ambatungkerr" target="_blank">TikTok</a>
-<a href="mailto:alfinsabil647@gmail.com">Email</a>
-</div>
+
+
+<section class="contact" id="contact">
+
+<h2>Mari Terhubung</h2>
+
+<form>
+
+<input type="text" placeholder="Nama">
+
+<input type="email" placeholder="Email">
+
+<textarea placeholder="Pesan"></textarea>
+
+<button>Kirim Pesan</button>
+
+</form>
+
 </section>
+
 
 <footer>
-© 2026 Alfin Sabil | All Rights Reserved
+
+<p>© 2026 Alfin Sabil</p>
+
 </footer>
 
+
 <script src="script.js"></script>
+
 </body>
-    </html>
+</html>
