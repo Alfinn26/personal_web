@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Alfin Sabil | Developer</title>
+<title>Alfin Sabil | Portfolio</title>
 
 <link rel="stylesheet" href="style.css">
 
@@ -14,43 +15,45 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
 
 </head>
 
-<body>
 
-<div id="particles"></div>
-<div class="cursor-glow"></div>
+<body>
 
 <nav class="navbar">
 
 <div class="logo">Alfin.</div>
 
-<ul>
+<ul class="nav-links">
 <li><a href="#home">Beranda</a></li>
 <li><a href="#about">Tentang</a></li>
-<li><a href="#project">Proyek</a></li>
+<li><a href="#projects">Proyek</a></li>
 <li><a href="#contact">Kontak</a></li>
 </ul>
 
 </nav>
 
 
-<section id="home" class="hero">
 
-<div class="hero-left">
+<!-- HERO -->
+
+<section id="home" class="hero container">
+
+<div class="hero-text">
 
 <p class="intro">HALO, SAYA</p>
 
 <h1>Alfin Sabil</h1>
 
-<h2><span id="typing"></span></h2>
+<h2 class="typing"></h2>
 
 <p class="desc">
-Saya membuat website modern, game sederhana
-dan project teknologi.
+Saya seorang pelajar yang fokus mempelajari
+pengembangan web dan teknologi modern.
 </p>
 
-<div class="buttons">
+<div class="hero-buttons">
 
-<a href="#project" class="btn">Lihat Proyek</a>
+<a href="#projects" class="btn">Lihat Proyek</a>
+
 <a href="#contact" class="btn-outline">Kontak Saya</a>
 
 </div>
@@ -67,50 +70,53 @@ dan project teknologi.
 </div>
 
 
-<div class="hero-right">
 
-<div class="profile-card">
+<div class="hero-image">
 
 <img src="pp.jpg">
 
 </div>
 
-</div>
-
 </section>
 
 
 
-<section id="about" class="about reveal">
+<!-- ABOUT -->
+
+<section id="about" class="about container">
 
 <div class="about-card">
 
+<div class="about-image">
+
 <img src="gambar1.JPG">
 
-<div>
+</div>
+
+<div class="about-text">
 
 <h2>Tentang Saya</h2>
 
 <p>
-Saya pelajar yang tertarik pada dunia
-programming dan teknologi modern.
+Saya tertarik pada dunia programming,
+web development, dan teknologi masa depan.
 </p>
 
 <div class="stats">
 
 <div>
-<h3 class="counter" data-target="2">0</h3>
+<h3>3+</h3>
 <p>Tahun Belajar</p>
 </div>
 
 <div>
-<h3 class="counter" data-target="3">0</h3>
+<h3>20+</h3>
 <p>Project</p>
 </div>
 
 <div>
-<h3 class="counter" data-target="16">0</h3>
-<p>Age</p>
+<h3>10+</h3>
+<p>Client</p>
 </div>
 
 </div>
@@ -123,31 +129,47 @@ programming dan teknologi modern.
 
 
 
-<section id="project" class="project reveal">
+<!-- PROJECT -->
+
+<section id="projects" class="projects container">
 
 <h2>Proyek Terpilih</h2>
 
 <div class="project-grid">
 
-<div class="card">
-<img src="images/project1.jpg">
-<div class="overlay">
+<div class="project-card">
+
+<img src="img/project1.jpg">
+
+<div class="project-info">
 <h3>Website Portfolio</h3>
-</div>
-</div>
-
-<div class="card">
-<img src="images/project2.jpg">
-<div class="overlay">
-<h3>Game JavaScript</h3>
-</div>
+<p>Website modern developer.</p>
 </div>
 
-<div class="card">
-<img src="images/project3.jpg">
-<div class="overlay">
+</div>
+
+
+<div class="project-card">
+
+<img src="img/project2.jpg">
+
+<div class="project-info">
+<h3>Game Zombie</h3>
+<p>Game survival JS.</p>
+</div>
+
+</div>
+
+
+<div class="project-card">
+
+<img src="img/project3.jpg">
+
+<div class="project-info">
 <h3>Dashboard Data</h3>
+<p>Visualisasi data.</p>
 </div>
+
 </div>
 
 </div>
@@ -156,7 +178,9 @@ programming dan teknologi modern.
 
 
 
-<section id="contact" class="contact reveal">
+<!-- CONTACT -->
+
+<section id="contact" class="contact container">
 
 <h2>Mari Terhubung</h2>
 
@@ -164,15 +188,12 @@ programming dan teknologi modern.
 
 <div class="contact-left">
 
-<p>📧 Email</p>
-<p>alfinsabil647@gmail.com</p>
-
-<p>💬 WhatsApp</p>
-<p>+6285137122268</p>
+<p><i class="fa fa-envelope"></i> email@gmail.com</p>
+<p><i class="fa fa-phone"></i> +62xxxxxxxx</p>
 
 </div>
 
-<form>
+<form class="contact-form">
 
 <input type="text" placeholder="Nama">
 
@@ -189,11 +210,13 @@ programming dan teknologi modern.
 </section>
 
 
+
 <footer>
 
 <p>© 2026 Alfin Sabil</p>
 
 </footer>
+
 
 <button id="scrollTop">↑</button>
 
