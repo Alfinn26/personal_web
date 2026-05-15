@@ -1,3 +1,7 @@
+html{
+    scroll-behavior:smooth;
+}
+
 *{
 margin:0;
 padding:0;
@@ -9,6 +13,18 @@ font-family:Segoe UI;
 background:#020617;
 color:white;
 line-height:1.6;
+}
+
+/* ANIMASI SCROLL */
+.reveal{
+    opacity:0;
+    transform:translateY(80px);
+    transition:all 1s ease;
+}
+
+.reveal.active{
+    opacity:1;
+    transform:translateY(0);
 }
 
 /* container */
